@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felix Krause</title>
+  
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="alternate" type="application/rss+xml" title="Felix Krause" href="/feed.xml">
+  
+    <script>
+  // Google Analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18658848-6', 'auto');
+  ga('set', 'anonymizeIp', true)
+  ga('send', 'pageview');
+</script>
+  
+<script type="text/javascript">
+  // amplitude.com
+  (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+  ;r.type="text/javascript";r.async=true
+  ;r.src="https://cdn.amplitude.com/libs/amplitude-3.8.0-min.gz.js"
+  ;r.onload=function(){if(e.amplitude.runQueuedFunctions){
+  e.amplitude.runQueuedFunctions()}else{
+  console.log("[Amplitude] Error: could not load SDK")}}
+  ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+  ;function s(e,t){e.prototype[t]=function(){
+  this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+  var o=function(){this._q=[];return this}
+  ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
+  ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
+  ;return this}
+  ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+  ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
+  ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups","setSessionId"]
+  ;function v(e){function t(t){e[t]=function(){
+  e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+  for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+  e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+  ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
+  ;e.amplitude=n})(window,document);
+
+  amplitude.getInstance().init("d29e6b5f160e55c2afe7aadafda39507");
+  amplitude.getInstance().logEvent('PAGE_VIEW');
+</script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">Felix Krause</a>
+  
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <a href="/" class="page-link active">Blog</a>
+        <a href="/privacy" class="page-link ">Privacy</a>
+        <a href="/about" class="page-link ">About</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div id="sidebar">
+  <h1 style="font-size: 21px;">Felix Krause</h1>
+  <p>Founder of <a href="https://fastlane.tools" target="_blank">fastlane.tools</a></p>
+  <p><a href="/about">More about me</a></p>
+  <img src="/assets/FelixKrause.jpeg" />
+
+  <!-- Social links -->
+  <ul class="social-media-list" style="margin-top: 20px; margin-bottom: 30px;">
+    <li>
+      <a href="https://github.com/KrauseFx" target="_blank"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">KrauseFx</span></a>
+
+    </li>
+    <li>
+      <a href="https://twitter.com/KrauseFx" target="_blank"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">KrauseFx</span></a>
+
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/KrauseFx"><span class="icon icon--linked"><svg width="16px" height="16px" viewBox="0 0 430.117 430.117" xml:space="preserve"><path id="LinkedIn" fill="#828282" d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707 c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21 v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824 C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463 c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z M5.477,420.56h92.184v-277.32H5.477V420.56z"/></svg>
+</span><span class="username">KrauseFx</span></a>
+
+    </li>
+  </ul>
+
+  <hr />
+
+  <p class="subscribe-newsletter">
+  Want to be the first to hear about more privacy and mobile related essays?
+</p>
+
+<form class="subscribe-form" action="https://tinyletter.com/krausefx" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/krausefx', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+  <label for="tlemail"></label>
+  <input type="text" placeholder="Email Address" name="email" id="tlemail">
+  <input type="hidden" value="1" name="embed">
+  <button type="submit">
+    Subscribe
+  </button>
+</form>
+
+
+  <hr />
+
+  <div class='jekyll-twitter-plugin'><a class="twitter-timeline" data-width="500" data-tweet-limit="5" href="https://twitter.com/KrauseFx?ref_src=twsrc%5Etfw">Tweets by KrauseFx</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+</div>
+
+
+        <div class="home">
+  
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline"><a href="/blog/our-goal-to-unify-fastlane-tools">Our goal to unify fastlane tools</a></h1>
+        <p class="post-meta">
+          <time datetime="2016-02-24T00:00:00+00:00" itemprop="datePublished">
+            
+            Feb 24, 2016
+          </time>
+          </p>
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        <p>I’ve been working as an iOS developer for over 5 years for various companies around the world. During that time it became clear there was lots of room for improvements around mobile developer tools, and in particular, the deployment of apps. Because of that, I started implementing little tools to help me automate tedious tasks like uploading metadata for release builds or generating screenshots. Each of those tools had no connection with each other and ran as standalone commands. About 4 months after the initial release of <a href="https://github.com/fastlane/deliver">deliver</a>, <a href="https://github.com/fastlane/snapshot">snapshot</a> and <a href="https://github.com/fastlane/frameit">frameit</a>, I noticed one common theme: All users of those tools developed their own shell scripts to trigger different deployment steps, pass on information, and ensure every step was successful.</p>
+
+<p>I wanted to help developers connect all the tools they use into one simple workflow. <strong>That’s why I created fastlane.</strong></p>
+
+<p>But as the community grew and the architecture became more complex, I needed to think about how we could best build the foundation of fastlane to continue to be a tool you love to use. </p>
+
+<p>In its current setup, we ran into these problems:</p>
+
+<ul>
+  <li>When releasing a spaceship bugfix, it required us to do at least five releases just to roll out the change to all users</li>
+  <li>fastlane has its own repo just to manage the other repos called “<a href="https://github.com/fastlane/countdown">countdown</a>”</li>
+  <li>The fastlane organization has over 30 GitHub repositories</li>
+  <li>I added 360 commits whose only purpose was to update internal dependencies between fastlane tools</li>
+  <li>We ended up with a lot of duplicate issues across multiple repos</li>
+  <li>
+    <p>Having 20 different travis builds to keep green, instead of just one</p>
+  </li>
+  <li>
+    <p>Working on a new feature or big change required us to switch to a separate branch on three different repos, which all depended on each other. Not only is it very time consuming to work on three different repo’s feature branches, but also the release takes longer: You have to merge the first PR, then do a release, before you can update the dependency of the other tool, to turn the build green and merge the next one.</p>
+  </li>
+  <li>It’s hard to decide when to release an update for each of the tools, so we built a script to show which tool has the highest number of outstanding changes to be released. Switching to a mono repo allows us to switch to a more regular release cycle</li>
+</ul>
+
+<h2 id="our-goal-to-unify-fastlane-tools">Our goal to unify fastlane tools</h2>
+
+<p>To solve a lot of these problems, our team decided to move all fastlane tools into one main repository. Each tool will be in a subfolder enabling you easy access to its source code.</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf5d407eaa0c7455e43cf_1456338400441_Screenshot+2016-02-24+12.21.45.png.45.png_" alt="" /></p>
+
+<p>I wanted to make this change as seamless and hassle-free as possible for everyone. With this migration, you can still use all tools directly, so your setup will continue to work as normal.</p>
+
+<p><strong>This should not break any existing setups and doesn’t require any action from your side. </strong></p>
+
+<p>Unifying fastlane means having one place for everything you need. Now, there will be one place to submit and search for issues on GitHub, one place for the documentation, one place to contribute to fastlane, and one tool to install :)</p>
+
+<p>We’ll be making this move within the next couple of weeks.</p>
+
+<h2 id="technical-details">Technical Details</h2>
+
+<p>I’d like to share some more technical information on how the switch will work and the challenges I faced.</p>
+
+<h3 id="the-requirements">The requirements:</h3>
+
+<ul>
+  <li>All individual tools (like deliver, snapshot, etc.) have to be moved into the main fastlane repo</li>
+  <li>We want to preserve the complete history, meaning all commits across all repositories</li>
+  <li>All existing issues on the repositories need to be migrated to the main repo, both open and closed ones</li>
+  <li>I wanted to be sure that every person who contributed to fastlane in the past shows up in the Contribution Graph. fastlane wouldn’t be possible without the great community around it.</li>
+</ul>
+
+<p>To implement all this I created a new repo (ironically) that contains all the scripts used to make the switch. You can find all the source code on <a href="https://github.com/fastlane/monorepo">fastlane/monorepo</a>.</p>
+
+<h3 id="moving-the-tools-to-the-main-repo">Moving the tools to the main repo</h3>
+
+<p>To move all source code to the main repo and still preserve the history with all commits, we used standard git features. You can check out the full source code on <a href="https://github.com/fastlane/monorepo">GitHub</a>. Using this technique, all previous commits are still available, and the 
+<a href="https://github.com/fastlane/fastlane/graphs/contributors">Contribution Graph</a> shows all developers who ever contributed to fastlane.</p>
+
+<h3 id="copying-the-github-issues-to-the-main-repo">Copying the GitHub issues to the main repo</h3>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf682b09f9568dea6ebd5_1456338570156__img.png_" alt="" /></p>
+
+<p>There is no built-in way to migrate or merge issues to another repo. GitHub provides a great API which we used to copy over all existing issues. However the newly copied issues are not created by the original author, but by our fastlane bot instead. On the newly created issue we always mention the original authors, resulting in them being subscribed to the new issue. </p>
+
+<p>You can check out the full source code on 
+<a href="https://github.com/fastlane/monorepo/blob/master/migrate_issues.rb">GitHub</a>. With this we worked on a lot of little tricks to make sure users are subscribed to the newly migrated issue and the original author is still visible. The GitHub API doesn’t allow us to post issues as the original author (for good reasons), so we solved this problem by posting the user’s information right inside the actual issue.</p>
+
+<p>###Ruby Gems</p>
+
+<p>There are no changes with the way you install fastlane, you can still install tools e.g. using 
+gem install deliver.</p>
+
+<p>###What happens to the other GitHub repositories</p>
+
+<p>For SEO reasons we will keep the other repositories around, however the long term plan is to remove them and have everything in the main repo. The old repos will link to the new mono repo, therefore all issues and pull requests will be closed and moved over to the fastlane main repo.</p>
+
+<h1 id="upgrading-fastlane-support-to-the-next-level-">Upgrading fastlane support to the next level 🚀</h1>
+
+<p>We took this opportunity to also improve the way we handle issues as a team. Our goal is to be faster and better at responding to all incoming GitHub issues and reviewing pull requests. </p>
+
+<p>Up until a few months ago, I was managing everything alone, resulting in my not responding to everyone in a timely matter. Thanks to Twitter &amp; Fabric, the fastlane team has grown tremendously in the last few weeks, allowing us to offer world-class help for our thriving community. We want to treat support as a first class citizen and provide the best experience possible.</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf7131d07c013a8455aee_1456338728792__img.jpg_" alt="We’re just getting started: being part of Fabric means a passionate dedicated team to offer the best support &amp; future experience for fastlane customers." /> We’re just getting started: being part of Fabric means a passionate dedicated team to offer the best support &amp; future experience for fastlane customers.</p>
+
+<p>With that in mind, we have a lot of inactive issues and pull requests spanning the last year when I was still working on this project in my free-time. Out of the 829 open issues across all repos, 273 issues haven’t had any activity within the last 3 months. </p>
+
+<p>After the migration, we will be constantly looking at all issues to make sure the process is improving. We’ll also be commenting on those inactive issues to see if the problem is still happening for those of you who submitted pull requests. This enables us to be much more responsive to new issues and have a better overview on what to focus our time on. </p>
+
+<p>##The Future</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf76f20c6473581b7985d_1456338809031__img.jpg_" alt="" /></p>
+
+<p>This is one of the most impactful changes to fastlane yet. While there’s a lot of information, it’s very important to the entire team to communicate what we are up to. This migration shows our commitment to innovation and creating the future of fastlane .</p>
+
+<p>I’m confident that this change will make yours and our lives much easier and will save us all a ton of time in the future. We’d love your feedback on this, Tweet at us at any time! :) </p>
+
+
+        <p style="margin-top: 30px">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+      </div>
+
+      <p class="extra-info">
+        
+        <a href="https://github.com/KrauseFx/krausefx.com/edit/master/_posts/2016-02-24-our-goal-to-unify-fastlane-tools.md" target="_blank" class="forkButton">
+  <svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+ 
+  Fork on GitHub
+</a>
+      </p>
+    </article>
+  
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline"><a href="/blog/introducing-screengrab-the-next-big-fastlane-tool-for-android">Introducing screengrab, the next big fastlane tool for Android</a></h1>
+        <p class="post-meta">
+          <time datetime="2016-02-11T00:00:00+00:00" itemprop="datePublished">
+            
+            Feb 11, 2016
+          </time>
+          </p>
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        <p><a href="https://github.com/fastlane/screengrab"><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56bcce6e7c65e4ae57770b0c_1455214200481__img.png_" alt="" /></a></p>
+
+<p>Before fastlane became part of Twitter, fastlane was only available for iOS applications. This year, at 
+<a href="https://krausefx.com/blog/fastlane-is-now-part-of-fabric">Twitter Flight</a>, we announced Android support for fastlane. We started by helping you ship your app to Google Play using 
+<a href="https://github.com/fastlane/supply">supply</a>. Of course, we also integrated with the tools you already love, like Gradle.</p>
+
+<p>Today, we’re excited to announce 
+<a href="https://github.com/fastlane/screengrab">screengrab</a>, a new tool to automate taking localised screenshots on different Android devices. It’s similar to 
+<a href="https://github.com/fastlane/snapshot">snapshot</a>, but for Android apps.</p>
+
+<p>Check out the 
+<a href="https://fabric.io/blog/introducing-screengrab">Fabric Blog Post</a> for more information.</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56bccf3786db432b6c463ae5_1455214437848__img.gif_" alt="" /></p>
+
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/fastlane/screengrab" target="_blank" style="text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>
+
+
+        <p style="margin-top: 30px">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+      </div>
+
+      <p class="extra-info">
+        
+        <a href="https://github.com/KrauseFx/krausefx.com/edit/master/_posts/2016-02-11-introducing-screengrab-the-next-big-fastlane-tool-for-android.md" target="_blank" class="forkButton">
+  <svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+ 
+  Fork on GitHub
+</a>
+      </p>
+    </article>
+  
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline"><a href="/blog/introducing-match-a-new-approach-to-code-signing">Introducing fastlane &#39;match&#39;: A new approach to code signing</a></h1>
+        <p class="post-meta">
+          <time datetime="2015-12-10T00:00:00+00:00" itemprop="datePublished">
+            
+            Dec 10, 2015
+          </time>
+          </p>
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        <p><a href="https://github.com/fastlane/match"><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5664b78ae4b02b0e953d8de1_1449701730450__img.png_" alt="" /></a></p>
+
+<p>A little over a month ago, 
+<a href="https://krausefx.com/blog/fastlane-is-now-part-of-fabric">fastlane officially joined the Fabric team</a> to help even more developers address pain points within mobile development. Since then, I’ve released several new tools to fastlane, including 
+<a href="https://github.com/fastlane/watchbuild">WatchBuild</a>. But one of the biggest pain points I’ve had for years (together with the developer community and my Fabric colleagues), is the headache of code signing when working with teams. This has been an issue since day one of iOS mobile development.</p>
+
+<p>Today, <strong>together with the Fabric team, I’m thrilled to introduce match</strong> — a new tool that helps automate the code signing process.</p>
+
+<p>When deploying an app to the App Store, a beta testing service or even installing it on your own device, most development teams have separate code signing identities for every member. This results in dozens of profiles including a lot of duplicates.</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5668b46fe0327ca58fdb88e6_1449702513395__img.png_" alt="" /></p>
+
+<p>To solve this, you can share one code signing identity with your team to simplify your setup, but here’s the catch: 
+<strong>there’s no simple way to keep the profiles and keys between the various machines in sync</strong>
+. You would have to manually export those keys using Xcode and transfer them between the machines every time you change something in your app. It’s especially frustrating when all you want is to run the app on your phone to test!</p>
+
+<p>This is why we rethought a whole new declarative approach to solve this, with match.</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5668b3b07086d7721f1d39be_1449702323091_match_init.gif_" alt="" /></p>
+
+<p>Once you create your own private Git repo, your certificates and profiles are stored there so you can have one code signing identity for the whole team. 
+<strong>When you run fastlane, match automatically fetches the latest certificates from the remote Git repo and installs them on your local machine. </strong></p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5668b2244bf1187dc345398e_1449701931350__img.gif_" alt="" /></p>
+
+<p>If a profile is missing, fastlane will automatically generate one for you and upload it to your Git repo. </p>
+
+<p>To use match, all you have to do is specify:</p>
+
+<ul>
+  <li>the type of the profile (App Store, Ad Hoc or Development)</li>
+  <li>your app’s bundle identifier</li>
+</ul>
+
+<p>Once you provide a separate, private git repo, match will store the iOS certificates provisioning profiles. Additionally, the files are encrypted using 
+openssl.</p>
+
+<p>While app development requires care throughout the deployment process, the goal for match was to make it easier to deal with the complexities of code signing when working with a team. With match, fastlane automatically pre-fills environment variables to enable proper code signing with multiple targets.  </p>
+
+<p>To learn more about the concept open
+<a href="https://codesigning.guide"> codesigning.guide</a>.</p>
+
+<p>To get access to the source code and more technical information, visit the 
+<a href="https://github.com/fastlane/match">GitHub</a> repo.</p>
+
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/fastlane/match" target="_blank" style="text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>
+
+
+        <p style="margin-top: 30px">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+      </div>
+
+      <p class="extra-info">
+        
+        <a href="https://github.com/KrauseFx/krausefx.com/edit/master/_posts/2015-12-10-introducing-match-a-new-approach-to-code-signing.md" target="_blank" class="forkButton">
+  <svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+ 
+  Fork on GitHub
+</a>
+      </p>
+    </article>
+  
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline"><a href="/blog/fastlane-is-now-part-of-fabric">fastlane is now part of Fabric</a></h1>
+        <p class="post-meta">
+          <time datetime="2015-10-21T00:00:00+00:00" itemprop="datePublished">
+            
+            Oct 21, 2015
+          </time>
+          </p>
+      </header>
+
+      <div class="post-content" itemprop="articleBody">
+        <p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626c94ce4b0a834a4586fe4_1445382477643__img.png_" alt="" /></p>
+
+<p><strong>Update 2017:</strong> <a href="https://krausefx.com/blog/fastlane-is-joining-google">fastlane got acquired by Google</a></p>
+
+<p>I started <a href="https://fastlane.tools">fastlane</a> as a side project about a year ago. In just a short time, fastlane became the most popular iOS automation toolset, used by thousands of developers around the world. I never imagined that so many people would use it or how much time it would require to maintain it. It became a full time job!</p>
+
+<p>That’s why today, I’m happy to announce that fastlane is now part of 
+<a href="https://fabric.io">Fabric</a>, where I will get to focus on fastlane full time and work on building the best developer tools available.</p>
+
+<h2 id="what-the-future-holds">What the future holds</h2>
+
+<p><a href="https://fastlane.tools">fastlane</a> will stay an open source project, and I will continue to work on new features.The Fabric team is committed helping fastlane grow for both existing fastlane users and new ones.</p>
+
+<p>And for the last two months, while I’ve been working from Twitter HQ in San Francisco, I was able to prepare a few big things:</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a0f0e4b03afa9e4d5c9d_1445372150075__img.png_" alt="" /></p>
+
+<h3 id="10-releases-for-all-tools">1.0 Releases for all tools</h3>
+
+<p>In the last few weeks, I’ve been focusing a lot on quality. All fastlane tools now use <a href="https://github.com/fastlane/spaceship">spaceship</a> to communicate with Apple. I’m very excited that all fastlane tools are now available as 1.0 releases, and I’m really looking forward to the things we’re building next.</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a100e4b05fed1255d17b_1445372162952__img.jpg_" alt="" /></p>
+
+<h3 id="fastlane-for-android-beta">fastlane for Android (Beta)</h3>
+
+<p>fastlane is the most popular Continuous Delivery solution for iOS apps. But I always wanted to make fastlane a tool that both iOS and Android developer could benefit from.</p>
+
+<p>As of today, you can use fastlane for both your iOS and Android projects.<a href="https://github.com/KrauseFx/fastlane/blob/master/docs/Android.md">Get started with fastlane for Android</a>!</p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a10ce4b0361a456a04bb_1445372174246__img.png_" alt="" /></p>
+
+<h3 id="snapshot-now-uses-ui-tests">snapshot now uses UI Tests</h3>
+
+<p>Earlier this year Apple announced Xcode 7 with support for UI Tests. This technology allows 
+<a href="https://github.com/krausefx/snapshot">snapshot</a> to be even better: Instead of using UI Automation Javascript code, you can now write the screenshot code in Swift or Objective C allowing you to use the powerful debugging features built into Xcode. </p>
+
+<p><img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a114e4b084f9eefdb281_1445372182626__img.png_" alt="" /></p>
+
+<p> </p>
+<h3 id="new-tool-scan">New tool: <a href="https://github.com/fastlane/scan">scan</a></h3>
+
+<p>A lot of developers use fastlane to run tests on their project. Up until now, fastlane used third party test runners to run and monitor tests. As of today, there is a new tool called 
+<a href="https://github.com/fastlane/scan">scan</a>,making it super simple to run the tests of your iOS and Mac application.</p>
+
+<p>If you’re an existing fastlane user, you can be excited about the next few weeks and what I have in the pipeline. If you’re new to fastlane, now is the best time to get started</p>
+
+<p><strong>Update 2017:</strong> <a href="https://krausefx.com/blog/fastlane-is-joining-google">fastlane got acquired by Google</a></p>
+
+
+        <p style="margin-top: 30px">
+  <small>Unless otherwise mentioned in the post, those projects are side projects which I work on on weekends and evenings, and are not affiliated with my work or employer.</small>
+</p>
+
+      </div>
+
+      <p class="extra-info">
+        
+        <a href="https://github.com/KrauseFx/krausefx.com/edit/master/_posts/2015-10-21-fastlane-is-now-part-of-fabric.md" target="_blank" class="forkButton">
+  <svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+ 
+  Fork on GitHub
+</a>
+      </p>
+    </article>
+  
+
+  <!-- Pagination links -->
+  <div class="pagination">
+    
+      <a href="/blog/page5/" class="previous">Newer</a>
+    
+    /
+    
+      <a href="/blog/page7/" class="next">Older</a>
+    
+  </div>
+
+</div>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/KrauseFx" target="_blank"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">KrauseFx</span></a>
+
+          </li>
+          <li>
+            <a href="https://twitter.com/KrauseFx" target="_blank"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">KrauseFx</span></a>
+
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-2"></div>
+      <div class="footer-col footer-col-3">
+        <p class="subscribe-newsletter">
+  Want to be the first to hear about more privacy and mobile related essays?
+</p>
+
+<form class="subscribe-form" action="https://tinyletter.com/krausefx" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/krausefx', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+  <label for="tlemail"></label>
+  <input type="text" placeholder="Email Address" name="email" id="tlemail">
+  <input type="hidden" value="1" name="embed">
+  <button type="submit">
+    Subscribe
+  </button>
+</form>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script type="text/javascript">
+  var links = document.links;
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    if (links[i].hostname != window.location.hostname) {
+      links[i].target = '_blank';
+    } 
+  }
+</script>
+
+
+  </body>
+
+</html>
